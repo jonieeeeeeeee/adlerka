@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+            <meta charset="utf-8">
+            <title>Stredná priemyselná škola elektrotechnická Karola Adlera 5, Bratislava</title>
+            <link rel="stylesheet" href="adlerka.css">
+            <link rel="apple-touch-icon-precomposed" sizes="57x57" href="media/favicon/apple-touch-icon-57x57" />
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="media/favicon/apple-touch-icon-114x114.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="media/favicon/apple-touch-icon-72x72.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="media/favicon/apple-touch-icon-144x144.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="60x60" href="media/favicon/apple-touch-icon-60x60.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="120x120" href="media/favicon/apple-touch-icon-120x120.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="76x76" href="media/favicon/apple-touch-icon-76x76.png" />
+            <link rel="apple-touch-icon-precomposed" sizes="152x152" href="media/favicon/apple-touch-icon-152x152.png" />
+            <link rel="icon" type="image/png" href="media/favicon/favicon-196x196.png" sizes="196x196" />
+            <link rel="icon" type="image/png" href="media/favicon/favicon-96x96.png" sizes="96x96" />
+            <link rel="icon" type="image/png" href="media/favicon/favicon-32x32.png" sizes="32x32" />
+            <link rel="icon" type="image/png" href="media/favicon/favicon-16x16.png" sizes="16x16" />
+            <link rel="icon" type="image/png" href="media/favicon/favicon-128.png" sizes="128x128" />
+            <meta name="application-name" content="&nbsp;"/>
+            <meta name="msapplication-TileColor" content="#FFFFFF" />
+            <meta name="msapplication-TileImage" content="media/favicon/mstile-144x144.png" />
+            <meta name="msapplication-square70x70logo" content="media/favicon/mstile-70x70.png" />
+            <meta name="msapplication-square150x150logo" content="media/favicon/mstile-150x150.png" />
+            <meta name="msapplication-wide310x150logo" content="media/favicon/mstile-310x150.png" />
+            <meta name="msapplication-square310x310logo" content="media/favicon/mstile-310x310.png" />
+            <video src="media/0001-0250.mp4" muted loop autoplay></video>
+            <style>
+                body {
+                    font-family: Poppins;
+                }
+
+                .overlay {
+                    height: 100%;
+                    width: 0;
+                    position: fixed;
+                    z-index: 50;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(255, 255, 255, 0.788);
+                    background-color: rgba(0, 0, 0, 0.8);
+                    overflow-x: hidden;
+                    transition: 0.5s;
+                }
+
+                .overlay-content {
+                    position: relative;
+                    top: 25%;
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 30px;
+                }
+
+                .overlay a {
+                    padding: 8px;
+                    text-decoration: none;
+                    font-size: 36px;
+                    color: #808080;
+                    display: block;
+                    transition: 0.3s;
+                }
+
+                .overlay a:hover, .overlay a:focus {
+                    color: #ffffff;
+                }
+
+                .overlay .closebtn {
+                    position: absolute;
+                    top: 20px;
+                    right: 45px;
+                    font-size: 60px;
+                    color: white;
+                }
+
+                @media screen and (max-height: 450px) {
+                    .overlay a {font-size: 20px}
+                    .overlay .closebtn {
+                        font-size: 40px;
+                        top: 15px;
+                        right: 35px;
+                        color: #ffffff;
+                    }
+                }
+           </style>
+    </head>
+
+    <body>
+
+        <script src="adlerka_navbar.js"></script>
+
+        <script>
+            window.onscroll = function() {myFunction()};
+            
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+              } else {
+                navbar.classList.remove("sticky");
+              }
+            }
+        </script>
+
+        <div id="navbar">
+            <h1 class="motto" style="text-align: center;"> Raz Adlerákom, vždy Adlerákom.</h1>
+            <span style="cursor: pointer; color: #ffffff; text-align: center;" onclick="openNav()"><p><u>Otvor menu</p></u></span>
+        </div>
+
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❄
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❄
+            </div>
+            <div class="snowflake">
+                ❅
+            </div>
+            <div class="snowflake">
+                ❆
+            </div>
+            <div class="snowflake">
+                ❄
+            </div>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="others/skola.html  ">Škola</a>
+                <a href="others/novinky.html">Novinky</a>
+                <a href="others/uchadzaci.html">Všetko o prjímacích pohovoroch</a>
+                <a href="others/sutaze.html">Súťaže</a>
+                <a href="others/kontakt.html">Kontakt</a>
+            </div>
+        </div>
+        
+        <div class="main_text">
+            <div class="card8">
+                <h2 style="color:#adadad"> Počítačové systémy - 2675 M Elektrotechnika</h2>
+                <div class="Odboryimg" style="align-content: stretch;"> <a href="files_for_odbory/PC_systems.html"> <p>Zober ma tam!</p> </a></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et suscipit nunc. Praesent semper, arcu in sagittis aliquam, mi enim vulputate leo, nec accumsan sapien ex id lectus. Nullam sit amet lacus nec nisi tincidunt interdum a id nulla. Integer efficitur erat ut dictum venenatis. Nam et pellentesque eros. Morbi egestas mollis massa, sed condimentum mauris semper non. Vivamus ultricies tristique nisi eu mollis. Phasellus sit amet nunc eget mauris molestie accumsan. Mauris vitae mollis nunc. Aliquam ut sapien rhoncus, fermentum felis non, scelerisque felis. Donec aliquam velit dui, et semper neque blandit non. Aenean varius orci vitae libero ullamcorper malesuada.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et suscipit nunc. Praesent semper, arcu in sagittis aliquam, mi enim vulputate leo, nec accumsan sapien ex id lectus. Nullam sit amet lacus nec nisi tincidunt interdum a id nulla. Integer efficitur erat ut dictum venenatis. Nam et pellentesque eros. Morbi egestas mollis massa, sed condimentum mauris semper non. Vivamus ultricies tristique nisi eu mollis. Phasellus sit amet nunc eget mauris molestie accumsan. Mauris vitae mollis nunc. Aliquam ut sapien rhoncus, fermentum felis non, scelerisque felis. Donec aliquam velit dui, et semper neque blandit non. Aenean varius orci vitae libero ullamcorper malesuada.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et suscipit nunc. Praesent semper, arcu in sagittis aliquam, mi enim vulputate leo, nec accumsan sapien ex id lectus. Nullam sit amet lacus nec nisi tincidunt interdum a id nulla. Integer efficitur erat ut dictum venenatis. Nam et pellentesque eros. Morbi egestas mollis massa, sed condimentum mauris semper non. Vivamus ultricies tristique nisi eu mollis. Phasellus sit amet nunc eget mauris molestie accumsan. Mauris vitae mollis nunc. Aliquam ut sapien rhoncus, fermentum felis non, scelerisque felis. Donec aliquam velit dui, et semper neque blandit non. Aenean varius orci vitae libero ullamcorper malesuada.</p>
+        </div>
+
+        <script>
+            function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+
+        <footer>
+            <marquee style="background-color: rgb(107, 106, 106) ;padding:5px 0 5px 0; border-radius: 10px; margin-right: 20px;" onmouseover="this.stop();" onmouseout="this.start();"> 
+                <a href="https://www.volkswagen.sk/"><img src="media/photos/volkswagen.png" alt="VW logo" class="mr-3" style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+                <a href="https://www.rtvs.sk/"><img src="media/photos/rtvs.png" alt="rtvs logo" class="mr-3" style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+                <a href="https://www.fei.stuba.sk/"><img title="fei" src="media/photos/fei.png" alt="fei logo" class="mr-3" style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+                <a href="https://www.netacad.com/"><img title="cisco" src="media/photos/cisco.png" alt="cisco logo" class="mr-3" style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+                <a href="https://www.paneurouni.com/"><img title="paneuropska" src="media/photos/paneuropska.png" alt="paneoeuropska logo" class="mr-3" style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+                <a href="https://amcef.sk/"><img title="amcef" src="media/photos/amcef.png" alt="amcef logo" class="mr-3" style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+                <a href="https://www.sopk.sk/"><img title="spok" src="media/photos/sopk.png" alt="sopk logo" class="mr-3" style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+                <a href="https://www.soitron.com/sk/"><img title="soitron" src="media/photos/soitron.png" alt="soitron logo" img style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+                <a href="https://www.zse.sk/"><img title="zse" src="media/photos/zse.png" alt="zse logo" style="margin-right: 50px; height:100px !important; width: auto !important; min-width: unset; max-width: unset;"></a>
+            </marquee>
+        </footer>
+
+    </body>
+
+
+</html>
